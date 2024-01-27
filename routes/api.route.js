@@ -31,13 +31,13 @@ router.post('/addCars',async (req,res,next)=>{
 router.get('/getListCar',async(req,res,next)=>{
     try {
         var data=await Cars.find().populate("_id");
-        // res.json({ 
-        // 'status':200,
-        // 'mes':"list success",
-        // 'data':data
+        res.json({ 
+        'status':200,
+        'mes':"list success",
+        'data':data
 
-        // })
-        res.render("listcar",{value:data})
+        })
+        // res.render("listcar",{value:data})
     } catch (error) {
         console.log(error);
     }
