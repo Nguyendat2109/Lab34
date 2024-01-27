@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>listcar</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>List Cars</h1>
+
+    <% for (var i = 0; i < value.length; i++) { %>
+        <div> Name : <%= value[i].name %></div>
+        <div> Brand : <%= value[i].brand %></div>
+        <div> Price :  <%= value[i].price %></div>
+        <br>
+        <% } %>
+  </body>
+</html>
